@@ -10,17 +10,15 @@ outer_results = []
 row_index = 0
 while row_index < src.count do
   element_index = 0
-  min_element = -1
+  min_element = 5
   while element_index < src[row_index].count do
 
     # Array at row_index
     # Element of the inner array at element_index
     # If the length of the current element is greater than the length of longest_string_element
     # Set longest_string_element to the current element
-    if src[row_index][element_index].to_s.length > min_element.to_s.length
+    if src[row_index][element_index].to_s.length < min_element.to_s.length
      min_element = src[row_index][element_index] 
-    else
-      min_element = src[row_index][element_index]
     end
     element_index += 1
   end
