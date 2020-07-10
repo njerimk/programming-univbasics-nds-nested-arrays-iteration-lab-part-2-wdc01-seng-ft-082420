@@ -17,7 +17,7 @@ while row_index < src.count do
     # Element of the inner array at element_index
     # If the length of the current element is greater than the length of longest_string_element
     # Set longest_string_element to the current element
-    if src[row_index][element_index].to_s.length < min_element.to_s.length
+    if src[row_index][element_index] < min_element
      min_element = src[row_index][element_index] 
     end
     element_index += 1
